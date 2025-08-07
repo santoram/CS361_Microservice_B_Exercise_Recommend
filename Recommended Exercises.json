@@ -1,0 +1,82 @@
+{
+  "Chest": [
+    "Barbell Bench Press",
+    "Dumbbell Bench Press",
+    "Incline Dumbbell Press",
+    "Machine Chest Press",
+    "Dumbbell Flyes",
+    "Cable Crossovers",
+    "Push-ups"
+  ],
+  "Back": [
+    "Deadlift",
+    "Pull-ups",
+    "Lat Pulldown",
+    "Barbell Rows",
+    "Dumbbell Rows",
+    "Seated Cable Rows",
+    "Hyperextensions (Back Extensions)"
+  ],
+  "Shoulders": [
+    "Overhead Press (Barbell/Dumbbell)",
+    "Seated Dumbbell Press",
+    "Lateral Raises",
+    "Front Raises",
+    "Rear Delt Flyes (Reverse Pec Deck)",
+    "Upright Rows",
+    "Face Pulls"
+  ],
+  "Biceps": [
+    "Barbell Curls",
+    "Dumbbell Curls (Standing/Seated)",
+    "Hammer Curls",
+    "Preacher Curls",
+    "Concentration Curls",
+    "Cable Curls"
+  ],
+  "Triceps": [
+    "Close-Grip Bench Press",
+    "Triceps Pushdowns (Cable)",
+    "Overhead Dumbbell Extension",
+    "Skullcrushers (Lying Triceps Extension)",
+    "Dips (Triceps Version)",
+    "Kickbacks (Dumbbell)"
+  ],
+  "Legs (Quads)": [
+    "Barbell Squats",
+    "Leg Press",
+    "Hack Squat",
+    "Leg Extensions",
+    "Lunges (Barbell/Dumbbell)"
+  ],
+  "Legs (Hamstrings)": [
+    "Romanian Deadlift (RDL)",
+    "Leg Curls (Lying/Seated)",
+    "Good Mornings",
+    "Glute-Ham Raise"
+  ],
+  "Legs (Glutes)": [
+    "Barbell Hip Thrusts",
+    "Glute Bridges",
+    "Step-ups",
+    "Cable Pull-Throughs"
+  ],
+  "Calves": [
+    "Standing Calf Raises",
+    "Seated Calf Raises",
+    "Donkey Calf Raises"
+  ],
+  "Abs/Core": [
+    "Plank",
+    "Crunches",
+    "Leg Raises",
+    "Russian Twists",
+    "Ab Rollouts",
+    "Cable Crunches"
+  ],
+  "Forearms": [
+    "Wrist Curls (Barbell/Dumbbell)",
+    "Reverse Wrist Curls",
+    "Farmer's Walks"
+  ]
+}
