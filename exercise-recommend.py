@@ -11,19 +11,24 @@ def get_suggested_exercise():
     Provides a list of exercises based on the target muscle group provided
     """
     target_muscle_group = request.args.get('name')
-    with open('Recommended Exercises.json', 'r') as infile:
-        recommended_exercises = json.load(infile)
-        exercises = recommended_exercises.get(target_muscle_group)
-        print("Exercises found")
+    if not target_muscle_group:
+        return Response(json.dumps('invalid query parameter'), mimetype='application/json', status=400)
+    
+    try:
+        with open('Recommended Exercises.json', 'r') as infile:
+            recommended_exercises = json.load(infile)
+    except FileNotFoundError:
+        return Response(json.dumps('File not found.', mimetype='application/json', status=500))
+    
+    exercises = recommended_exercises.get(target_muscle_group)    
     if exercises:
+        print('found some exercises')
         response_data = exercises
-        print(response_data)
-        return Response(json.dumps(response_data), mimetype='application/json', status=200)
-
-
-
+    
+    print("sending over!")
+    return Response(json.dumps(response_data), mimetype='application/json', status=200)
 
 if __name__ == '__main__':
     # check to make sure the file path exsists before execution
-    # note this is running on port 8000
+    # note this is running on port 5002
     app.run(host='127.0.0.1', port=5002, debug=True)
