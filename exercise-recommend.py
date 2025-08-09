@@ -1,5 +1,5 @@
 import json
-from flask import Flask, request, Response
+from flask import Flask, request, Response, jsonify
 
 app = Flask(__name__)
 
@@ -27,7 +27,7 @@ def get_suggested_exercise():
         response_data = exercises
     
     print("sending over!")
-    return Response(json.dumps(response_data), mimetype='application/json', status=200)
+    return jsonify({"Exercises": response_data})
 
 if __name__ == '__main__':
     # check to make sure the file path exsists before execution
