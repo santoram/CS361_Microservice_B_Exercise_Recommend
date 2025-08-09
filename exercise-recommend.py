@@ -11,6 +11,7 @@ def get_suggested_exercise():
     Provides a list of exercises based on the target muscle group provided
     """
     target_muscle_group = request.args.get('name')
+    print(target_muscle_group)
     if not target_muscle_group:
         return Response(json.dumps('invalid query parameter'), mimetype='application/json', status=400)
     
