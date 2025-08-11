@@ -21,9 +21,10 @@ def get_suggested_exercise():
     except FileNotFoundError:
         return Response(json.dumps('File not found.', mimetype='application/json', status=500))
     
+    print("Recieved request. Gathing exercises...")
     exercises = recommended_exercises.get(target_muscle_group)    
     if exercises:
-        print('found some exercises')
+        print('Found some exercises. Sending over.')
         response_data = exercises
     
     print("sending over!")
